@@ -176,6 +176,9 @@ button {
         width: 100%; 
         padding: 10px;  
     }
+    h1{
+        margin-left: 20px;
+    }
 }
    
 /* Set min point to disable responsive */
