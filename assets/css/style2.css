@@ -14,7 +14,7 @@ body{
 
 .header-left {
     color: #ffffff;
-    margin-left: 360px;
+    margin-left: 340px;
     float: left;
     background: #4aaaa5;
     padding-left: 5px;
@@ -23,7 +23,7 @@ body{
 
  .header-right {
      float: right;
-     margin-right: 365px;
+     margin-right: 335px;
 }
 span{
     margin-top: 10px;
@@ -50,69 +50,84 @@ header {
 }
 
 .container {
-    width: 960px;
-    margin: 0px auto;
-    background-color: #ffffff;
-    margin-top: 60px;
-    height: 650px;
+   clear: both;
+   margin-top: 40px;
+   width: 960px;
+   margin: 0px auto;
+   background-color: #ffffff;
+   margin-top: 60px;
+   height: 650px;
+
 }
 
-.bio-title {
+.bio-heading {
     color: #4aaaa5;
-    float: left;
 }
 
-#bio-image {
-    width: 200px;
-    padding-right: 20px; 
-    /* height: 200px; */
-    /* margin-right: 21px; */
-    float: left; 
-} 
-
-#left-column {
-    width: 920px;
-    padding: 20px; 
-    float: left; 
+#bio {
+  /* padding: 20px;  
+  margin:auto;
+  width: 960px;
+  background-color: #ffffff; */
 }
 
-#right-column {
-    width: 920px;
-    padding: 20px;
-    float: left;
-}
-
-.footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    text-align: center;
-    clear: both;
-    height: 40px;
-    background-color: #666666;
-    border-top: solid 6px #4aaaa5;
-    padding-top: 16px;
-}
   
 li :hover {
     color: #4aaaa5;
 }
 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media(max-width: 1220px) {
-    .header-left {
-        margin-left: 130px;
-        /* padding-left: 5px;
-        padding-right: 5px; */
-    }
-    
-    .header-right {
-        margin-right: 125px;
-    }  
+input:focus { 
+    outline: none !important;
+    border-color: #4aaaa5;
+    box-shadow: 0 0 10px #719ECE;
 }
 
- /* Large devices (laptops/desktops, 992px and up) */ 
+textarea:focus { 
+    outline: none !important;
+    border-color: #4aaaa5;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.comments {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    clear: both;
+    height: 50px;
+    background-color: #666666;
+    border-top: solid 6px #4aaaa5; 
+    padding-top: 16px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */ 
 @media(max-width: 959px) {
     
     .container {
@@ -124,9 +139,10 @@ li :hover {
     #right-column {
         width: 80%;  
     }
-    img {
+
+    /* img {
         width: 100%;
-    }
+    } */
 
     .header-left {
         margin-left: 20px;
@@ -160,10 +176,6 @@ li :hover {
         width: 100%; 
         padding: 10px;  
     }
-
-    p {
-        padding: 20px;
-    }
 }
    
 /* Set min point to disable responsive */
@@ -181,10 +193,3 @@ li :hover {
         padding: 20px;
     }
 }
-
- 
-
- 
-
-
-
